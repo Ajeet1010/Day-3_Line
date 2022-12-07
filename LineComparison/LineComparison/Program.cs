@@ -13,7 +13,7 @@ namespace LineComparison
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Choose the option to perform the operation:-  1) Calculate length \n" +
+                Console.WriteLine("Choose the option to perform the operation:-  1) Calculate length \n 2) Check the equality of line" +
                      "Enter the no to operate: ");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -22,6 +22,11 @@ namespace LineComparison
                         Line line = new Line();
                         line.Calculate();
                         break;
+                    case 2:
+                        Equality equality = new Equality();
+                        equality.Line();
+                        break;
+
                 }
             }
         }
